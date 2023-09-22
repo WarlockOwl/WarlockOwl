@@ -1,0 +1,243 @@
+{
+	"siteVersion": "1.187.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "WarlockOwl",
+				"abbreviation": "WLO",
+				"full": "Warryn",
+				"url": "https://github.com/WarlockOwl/homebrew",
+				"authors": [
+					"WarlockOwl"
+				],
+				"convertedBy": [],
+				"color": "#00800f"
+			}
+		],
+		"dateAdded": 1695409545,
+		"dateLastModified": 1695409545
+	},
+	"monster": [
+		{
+			"name": "Warryn, Disciple of Se'batrix",
+			"source": "WarlockOwl",
+			"page": 1,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Striggan"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"Leather armor"
+					]
+				},
+				{
+					"ac": 16,
+					"condition": "with {@spell mage armor}"
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 28",
+				"average": 91
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 14,
+			"int": 20,
+			"wis": 13,
+			"cha": 9,
+			"save": {
+				"wis": "+4",
+				"int": "+8"
+			},
+			"skill": {
+				"arcana": "+11",
+				"history": "+8",
+				"investigation": "+8",
+				"deception": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"psychic"
+			],
+			"languages": [
+				"telepathy 30 ft",
+				"Auran",
+				"Common",
+				"Deep Speech",
+				"Sylvan"
+			],
+			"cr": "8",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Warryn's innate spellcasting ability is Intelligence. He can innately cast the following spells (spell save {@dc 16}), requiring no material components:"
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell mage armor} (self only)",
+						"{@spell sending}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell misty step}",
+							"{@spell plane shift}"
+						]
+					},
+					"ability": "int"
+				},
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The warlock is a 14th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell eldritch blast}",
+								"{@spell mage hand}",
+								"{@spell mind sliver|TCE}",
+								"{@spell minor illusion}",
+								"{@spell prestidigitation}",
+								"{@spell ray of frost}"
+							]
+						},
+						"5": {
+							"spells": [
+								"{@spell armor of Agathys}",
+								"{@spell contact other plane}",
+								"{@spell crown of madness}",
+								"{@spell dissonant whispers}",
+								"{@spell dominate beast}",
+								"{@spell Evard's black tentacles}",
+								"{@spell hunger of Hadar}",
+								"{@spell summon aberration|TCE}",
+								"{@spell summon elemental|TCE}",
+								"{@spell telekinesis}"
+							],
+							"slots": 3,
+							"lower": 1
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Whispering Aura",
+					"entries": [
+						"At the start of each of the warlock's turns, each creature of its choice within 5 feet of it must succeed on a {@dc 16} Wisdom saving throw or take 10 ({@damage 3d6}) psychic damage, provided that the warlock isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Warryn makes two Eldritch Blast attacks."
+					]
+				},
+				{
+					"name": "Tentacle of hadar",
+					"entries": [
+						"{@atk rs} {@hit 8} to hit, range 120 ft., one target. {@h}14 ({@damage 3d6 + 5}) Psychic damage, and the target can't take reactions until the end of Warryn's next turn, as a spectral tentacle clings to the target."
+					]
+				},
+				{
+					"name": "Eldritch Blast",
+					"entries": [
+						"{@atk rs} {@hit 8} to hit, range 120 ft., one target. {@h}10 ({@damage 1d10 + 5}) Force damage."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/warlock-of-the-great-old-one.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AU",
+				"C",
+				"DS",
+				"S",
+				"TP"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"O",
+				"Y"
+			],
+			"spellcastingTags": [
+				"CL",
+				"I"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"dexterity",
+				"intelligence",
+				"wisdom"
+			],
+			"hasFluff": true,
+			"fluff": {
+				"name": "Warlock of the Great Old One",
+				"source": "VGM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Warlocks of the Great Old One gain their powers through magical pacts forged with eldritch entities from strange and distant realms of existence. Some of these warlocks associate with cultists devoted to these entities, as well as aberrations that share their goals, yet other warlocks of the Great Old One are experts at rooting out the insanity and wickedness inspired by bizarre beings from beyond the stars."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}
